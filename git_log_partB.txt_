@@ -1,0 +1,81 @@
+commit e07ab89738c5cae858e2fa7692ce6e40bcdba85f
+Author: Aniket <aniketwani1729@gmail.com>
+Date:   Wed Mar 15 12:22:19 2023 +0530
+
+    Deleting file2.txt
+
+diff --git a/file1.txt b/file1.txt
+index f8d2c5c..513a8db 100644
+--- a/file1.txt
++++ b/file1.txt
+@@ -1,3 +1,4 @@
+ Aniket#CSE
+ taj
+ Robot
++Red
+diff --git a/file2.txt b/file2.txt
+deleted file mode 100644
+index 96734f0..0000000
+--- a/file2.txt
++++ /dev/null
+@@ -1,2 +0,0 @@
+-2025
+-Software Engineer
+
+commit 6776a501369cc71905e500e18e914c28c24d1e8b
+Author: Aniket <aniketwani1729@gmail.com>
+Date:   Wed Mar 15 12:17:04 2023 +0530
+
+    Added Graduation Year and Job
+
+diff --git a/file2.txt b/file2.txt
+new file mode 100644
+index 0000000..96734f0
+--- /dev/null
++++ b/file2.txt
+@@ -0,0 +1,2 @@
++2025
++Software Engineer
+
+commit 68fba91cd1e4d2f23a777b7156195f856f2871f3
+Author: Aniket <aniketwani1729@gmail.com>
+Date:   Wed Mar 15 12:01:22 2023 +0530
+
+    Added favorite restaurant and movie
+
+diff --git a/file1.txt b/file1.txt
+index 00d38df..f8d2c5c 100644
+--- a/file1.txt
++++ b/file1.txt
+@@ -1 +1,3 @@
+ Aniket#CSE
++taj
++Robot
+
+commit 08078b473ef645b6a17eea266c663db7eef2075a
+Author: Aniket <aniketwani1729@gmail.com>
+Date:   Wed Mar 15 11:56:13 2023 +0530
+
+    Now has my major
+
+diff --git a/file1.txt b/file1.txt
+index 0246de4..00d38df 100644
+--- a/file1.txt
++++ b/file1.txt
+@@ -1 +1 @@
+-Aniket#27628
++Aniket#CSE
+
+commit 103f7dee87160bfaee038488186975ac34414179
+Author: Aniket <aniketwani1729@gmail.com>
+Date:   Wed Mar 15 11:52:15 2023 +0530
+
+    Committing a new file with my name
+
+diff --git a/file1.txt b/file1.txt
+new file mode 100644
+index 0000000..0246de4
+--- /dev/null
++++ b/file1.txt
+@@ -0,0 +1 @@
++Aniket#27628

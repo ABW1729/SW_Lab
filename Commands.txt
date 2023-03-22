@@ -1,0 +1,400 @@
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ gedit file1.txt
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git init
+
+Command 'git' not found, but can be installed with:
+
+sudo apt install git
+
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ sudo apt install git
+[sudo] password for dell26: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  linux-headers-5.4.0-137-generic linux-hwe-5.4-headers-5.4.0-122
+  linux-hwe-5.4-headers-5.4.0-124 linux-hwe-5.4-headers-5.4.0-126
+  linux-hwe-5.4-headers-5.4.0-128 linux-hwe-5.4-headers-5.4.0-131
+  linux-hwe-5.4-headers-5.4.0-132 linux-hwe-5.4-headers-5.4.0-136
+  linux-hwe-5.4-headers-5.4.0-137 linux-hwe-5.4-headers-5.4.0-84
+  linux-image-5.4.0-137-generic linux-modules-5.4.0-137-generic
+  linux-modules-extra-5.4.0-137-generic
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  git-man liberror-perl
+Suggested packages:
+  git-daemon-run | git-daemon-sysvinit git-doc git-el git-email git-gui gitk
+  gitweb git-cvs git-mediawiki git-svn
+The following NEW packages will be installed:
+  git git-man liberror-perl
+0 upgraded, 3 newly installed, 0 to remove and 16 not upgraded.
+Need to get 4,751 kB of archives.
+After this operation, 34.0 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 liberror-perl all 0.17025-1 [22.8 kB]
+Get:2 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 git-man all 1:2.17.1-1ubuntu0.17 [804 kB]
+Get:3 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 git amd64 1:2.17.1-1ubuntu0.17 [3,924 kB]
+Fetched 4,751 kB in 3s (1,588 kB/s)
+Selecting previously unselected package liberror-perl.
+(Reading database ... 362580 files and directories currently installed.)
+Preparing to unpack .../liberror-perl_0.17025-1_all.deb ...
+Unpacking liberror-perl (0.17025-1) ...
+Selecting previously unselected package git-man.
+Preparing to unpack .../git-man_1%3a2.17.1-1ubuntu0.17_all.deb ...
+Unpacking git-man (1:2.17.1-1ubuntu0.17) ...
+Selecting previously unselected package git.
+Preparing to unpack .../git_1%3a2.17.1-1ubuntu0.17_amd64.deb ...
+Unpacking git (1:2.17.1-1ubuntu0.17) ...
+Setting up git-man (1:2.17.1-1ubuntu0.17) ...
+Setting up liberror-perl (0.17025-1) ...
+Setting up git (1:2.17.1-1ubuntu0.17) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git init
+Initialized empty Git repository in /home/dell26/Inf43Hw2./.git/
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git config --global user.name "aNIKET"
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git config --global user.name "Aniket"
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git config --global user.email "aniketwani1729@gmail.com"
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git add file1.txt
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git status
+\On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   file1.txt
+
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ \git commit -m "Committing a new file with my
+> \git commit -m "Committing a new file with my
+error: pathspec 'a' did not match any file(s) known to git.
+error: pathspec 'new' did not match any file(s) known to git.
+error: pathspec 'file' did not match any file(s) known to git.
+error: pathspec 'with' did not match any file(s) known to git.
+error: pathspec 'my' did not match any file(s) known to git.
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ Run git commit -m "Committing a new file with my
+> 
+> 
+> 
+> ^C
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$  git commit -m "Committing a new file with my name"
+
+
+
+[master (root-commit) 103f7de] Committing a new file with my name
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file1.txt
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git log
+commit 103f7dee87160bfaee038488186975ac34414179 (HEAD -> master)
+Author: Aniket <aniketwani1729@gmail.com>
+Date:   Wed Mar 15 11:52:15 2023 +0530
+
+    Committing a new file with my name
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git reset --hard
+HEAD is now at 103f7de Committing a new file with my name
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git commit -m "Now has my major"
+On branch master
+Changes not staged for commit:
+	modified:   file1.txt
+
+no changes added to commit
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git commit -a -m "Now has my major"
+[master 08078b4] Now has my major
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git stage file1.txt
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git commit -m "Added favorite
+> ^C
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git commit -m "Added favorite restaurant"
+[master 82e5bb9] Added favorite restaurant
+ 1 file changed, 2 insertions(+)
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git commit --amend -m "Added favorite restaurant and movie"
+[master b2b083e] Added favorite restaurant and movie
+ Date: Wed Mar 15 12:01:22 2023 +0530
+ 1 file changed, 2 insertions(+)
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git log
+commit b2b083e6139c35620d03dc974755ecba7ab14a4b (HEAD -> master)
+Author: Aniket <aniketwani1729@gmail.com>
+Date:   Wed Mar 15 12:01:22 2023 +0530
+
+    Added favorite restaurant and movie
+
+commit 08078b473ef645b6a17eea266c663db7eef2075a
+Author: Aniket <aniketwani1729@gmail.com>
+Date:   Wed Mar 15 11:56:13 2023 +0530
+
+    Now has my major
+
+commit 103f7dee87160bfaee038488186975ac34414179
+Author: Aniket <aniketwani1729@gmail.com>
+Date:   Wed Mar 15 11:52:15 2023 +0530
+
+    Committing a new file with my name
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git commit --amend -m "Added favorite restaurant and movie"
+[master 68fba91] Added favorite restaurant and movie
+ Date: Wed Mar 15 12:01:22 2023 +0530
+ 1 file changed, 2 insertions(+)
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git log
+commit 68fba91cd1e4d2f23a777b7156195f856f2871f3 (HEAD -> master)
+Author: Aniket <aniketwani1729@gmail.com>
+Date:   Wed Mar 15 12:01:22 2023 +0530
+
+    Added favorite restaurant and movie
+
+commit 08078b473ef645b6a17eea266c663db7eef2075a
+Author: Aniket <aniketwani1729@gmail.com>
+Date:   Wed Mar 15 11:56:13 2023 +0530
+
+    Now has my major
+
+commit 103f7dee87160bfaee038488186975ac34414179
+Author: Aniket <aniketwani1729@gmail.com>
+Date:   Wed Mar 15 11:52:15 2023 +0530
+
+    Committing a new file with my name
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git checkout 103f
+Note: checking out '103f'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 103f7de Committing a new file with my name
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git checkout master
+Previous HEAD position was 103f7de Committing a new file with my name
+Switched to branch 'master'
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git log
+commit 68fba91cd1e4d2f23a777b7156195f856f2871f3 (HEAD -> master)
+Author: Aniket <aniketwani1729@gmail.com>
+Date:   Wed Mar 15 12:01:22 2023 +0530
+
+    Added favorite restaurant and movie
+
+commit 08078b473ef645b6a17eea266c663db7eef2075a
+Author: Aniket <aniketwani1729@gmail.com>
+Date:   Wed Mar 15 11:56:13 2023 +0530
+
+    Now has my major
+
+commit 103f7dee87160bfaee038488186975ac34414179
+Author: Aniket <aniketwani1729@gmail.com>
+Date:   Wed Mar 15 11:52:15 2023 +0530
+
+    Committing a new file with my name
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ gedit file2.txt
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git stage file2.txt
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git commit -m "Added Graduation Year and Job"
+[master 6776a50] Added Graduation Year and Job
+ 1 file changed, 2 insertions(+)
+ create mode 100644 file2.txt
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git log
+commit 6776a501369cc71905e500e18e914c28c24d1e8b (HEAD -> master)
+Author: Aniket <aniketwani1729@gmail.com>
+Date:   Wed Mar 15 12:17:04 2023 +0530
+
+    Added Graduation Year and Job
+
+commit 68fba91cd1e4d2f23a777b7156195f856f2871f3
+Author: Aniket <aniketwani1729@gmail.com>
+Date:   Wed Mar 15 12:01:22 2023 +0530
+
+    Added favorite restaurant and movie
+
+commit 08078b473ef645b6a17eea266c663db7eef2075a
+Author: Aniket <aniketwani1729@gmail.com>
+Date:   Wed Mar 15 11:56:13 2023 +0530
+
+    Now has my major
+
+commit 103f7dee87160bfaee038488186975ac34414179
+Author: Aniket <aniketwani1729@gmail.com>
+Date:   Wed Mar 15 11:52:15 2023 +0530
+
+    Committing a new file with my name
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git log file2.txt
+commit 6776a501369cc71905e500e18e914c28c24d1e8b (HEAD -> master)
+Author: Aniket <aniketwani1729@gmail.com>
+Date:   Wed Mar 15 12:17:04 2023 +0530
+
+    Added Graduation Year and Job
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   file1.txt
+	deleted:    file2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git add file1.txt
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git rm file2.txt
+rm 'file2.txt'
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git commit -m "Deleting file2.txt"
+[master e07ab89] Deleting file2.txt
+ 2 files changed, 1 insertion(+), 2 deletions(-)
+ delete mode 100644 file2.txt
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git log -p -3
+commit e07ab89738c5cae858e2fa7692ce6e40bcdba85f (HEAD -> master)
+Author: Aniket <aniketwani1729@gmail.com>
+Date:   Wed Mar 15 12:22:19 2023 +0530
+
+    Deleting file2.txt
+
+diff --git a/file1.txt b/file1.txt
+index f8d2c5c..513a8db 100644
+--- a/file1.txt
++++ b/file1.txt
+@@ -1,3 +1,4 @@
+ Aniket#CSE
+ taj
+ Robot
++Red
+diff --git a/file2.txt b/file2.txt
+deleted file mode 100644
+index 96734f0..0000000
+--- a/file2.txt
++++ /dev/null
+@@ -1,2 +0,0 @@
+-2025
+-Software Engineer
+
+commit 6776a501369cc71905e500e18e914c28c24d1e8b
+Author: Aniket <aniketwani1729@gmail.com>
+Date:   Wed Mar 15 12:17:04 2023 +0530
+
+    Added Graduation Year and Job
+
+diff --git a/file2.txt b/file2.txt
+new file mode 100644
+index 0000000..96734f0
+--- /dev/null
++++ b/file2.txt
+@@ -0,0 +1,2 @@
++2025
++Software Engineer
+
+commit 68fba91cd1e4d2f23a777b7156195f856f2871f3
+Author: Aniket <aniketwani1729@gmail.com>
+Date:   Wed Mar 15 12:01:22 2023 +0530
+
+    Added favorite restaurant and movie
+
+diff --git a/file1.txt b/file1.txt
+index 00d38df..f8d2c5c 100644
+--- a/file1.txt
++++ b/file1.txt
+@@ -1 +1,3 @@
+ Aniket#CSE
++taj
++Robot
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git checkout HEAD~1 file2.txt.
+error: pathspec 'file2.txt.' did not match any file(s) known to git.
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git checkout HEAD~1 file2.txt
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git add file2.txt
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   file2.txt
+
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git log -p
+commit e07ab89738c5cae858e2fa7692ce6e40bcdba85f (HEAD -> master)
+Author: Aniket <aniketwani1729@gmail.com>
+Date:   Wed Mar 15 12:22:19 2023 +0530
+
+    Deleting file2.txt
+
+diff --git a/file1.txt b/file1.txt
+index f8d2c5c..513a8db 100644
+--- a/file1.txt
++++ b/file1.txt
+@@ -1,3 +1,4 @@
+ Aniket#CSE
+ taj
+ Robot
++Red
+diff --git a/file2.txt b/file2.txt
+deleted file mode 100644
+index 96734f0..0000000
+--- a/file2.txt
++++ /dev/null
+@@ -1,2 +0,0 @@
+-2025
+-Software Engineer
+
+commit 6776a501369cc71905e500e18e914c28c24d1e8b
+Author: Aniket <aniketwani1729@gmail.com>
+Date:   Wed Mar 15 12:17:04 2023 +0530
+
+    Added Graduation Year and Job
+
+diff --git a/file2.txt b/file2.txt
+new file mode 100644
+index 0000000..96734f0
+--- /dev/null
++++ b/file2.txt
+@@ -0,0 +1,2 @@
++2025
++Software Engineer
+
+commit 68fba91cd1e4d2f23a777b7156195f856f2871f3
+Author: Aniket <aniketwani1729@gmail.com>
+Date:   Wed Mar 15 12:01:22 2023 +0530
+
+    Added favorite restaurant and movie
+
+diff --git a/file1.txt b/file1.txt
+index 00d38df..f8d2c5c 100644
+--- a/file1.txt
++++ b/file1.txt
+@@ -1 +1,3 @@
+ Aniket#CSE
++taj
++Robot
+
+commit 08078b473ef645b6a17eea266c663db7eef2075a
+Author: Aniket <aniketwani1729@gmail.com>
+Date:   Wed Mar 15 11:56:13 2023 +0530
+
+    Now has my major
+
+diff --git a/file1.txt b/file1.txt
+index 0246de4..00d38df 100644
+--- a/file1.txt
++++ b/file1.txt
+@@ -1 +1 @@
+-Aniket#27628
++Aniket#CSE
+
+commit 103f7dee87160bfaee038488186975ac34414179
+Author: Aniket <aniketwani1729@gmail.com>
+Date:   Wed Mar 15 11:52:15 2023 +0530
+
+    Committing a new file with my name
+
+diff --git a/file1.txt b/file1.txt
+new file mode 100644
+index 0000000..0246de4
+--- /dev/null
++++ b/file1.txt
+@@ -0,0 +1 @@
++Aniket#27628
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ git log -p > git_log_partB.txt.
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ timedatectl
+                      Local time: Wed 2023-03-15 12:26:55 IST
+                  Universal time: Wed 2023-03-15 06:56:55 UTC
+                        RTC time: Wed 2023-03-15 06:56:55
+                       Time zone: Asia/Kolkata (IST, +0530)
+       System clock synchronized: yes
+systemd-timesyncd.service active: yes
+                 RTC in local TZ: no
+dell26@dell26-HP-280-Pro-G5-MT-Business-PC:~/Inf43Hw2.$ 
+
